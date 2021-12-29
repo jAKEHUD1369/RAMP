@@ -8,3 +8,15 @@ allprojects {
 }dependencies {
     implementation 'com.github.RampNetwork:ramp-sdk-android:1.+'
 }
+class MainActivity : AppCompatActivity() {
+
+    private lateinit var rampSdk: RampSDK
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        rampSdk = RampSDK()
+        // ...
+    }
+    // ...
+}
