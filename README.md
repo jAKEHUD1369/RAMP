@@ -5,4 +5,6 @@ allprojects {
         maven { url 'https://jitpack.io' }
         maven { url 'https://button.passbase.com/__android' }
     }
+}dependencies {
+    implementation 'com.github.RampNetwork:ramp-sdk-android:1.+'
 }
